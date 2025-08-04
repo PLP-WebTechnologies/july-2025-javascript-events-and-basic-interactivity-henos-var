@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Web Page</h1>
+
+  <!-- Interactive Section 1: Custom Form -->
+  <section>
+    <h2>Sign Up Form</h2>
+    <form id="signupForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" /><br />
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" /><br />
+
+      <button type="submit">Submit</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <!-- Interactive Section 2: Toggle Content -->
+  <section>
+    <h2>Toggle Box</h2>
+    <button id="toggleBtn">Show/Hide Message</button>
+    <p id="toggleText" style="display: none;">This is a toggled message!</p>
+  </section>
+
+  <!-- Interactive Section 3: Counter -->
+  <section>
+    <h2>Click Counter</h2>
+    <button id="countBtn">Click Me!</button>
+    <p>You clicked <span id="clickCount">0</span> times.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
